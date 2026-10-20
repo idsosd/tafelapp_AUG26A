@@ -1,12 +1,13 @@
+let tafelvanObj = document.getElementById("inputTafel");
 function toonTafel()
 {
-    let tafelvan = document.getElementById("inputTafel").value;
     //let teller = 1;
+    //let tafelvan = tafelvanObj.value;
     let output = "";
     let uitkomst = 0;
     for (let teller = 1; teller < 11; teller++){
-        uitkomst = teller * tafelvan;
-        output += teller + " x " + tafelvan + " = " + uitkomst + "<br>";
+        uitkomst = teller * tafelvanObj.value;
+        output += teller + " x " + tafelvanObj.value + " = " + uitkomst + "<br>";
     }
     // while (teller < 21){
     //     uitkomst = teller * tafelvan;
