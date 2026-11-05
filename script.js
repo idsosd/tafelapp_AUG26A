@@ -1,19 +1,30 @@
-let tafelvanObj = document.getElementById("inputTafel");
+let tafelinpObj = document.getElementById("inputTafel");
+let tafeloutpObj = document.getElementById("outputTafel");
+
+let oefentafelinpObj = document.getElementById("inputOefenTafel");
+let oefentafeloutpObj = document.getElementById("outputOefenTafel");
+let antwoefentafelwinpObj = document.getElementById("inputAntwOefenTafel");
+
 function toonTafel()
 {
-    //let teller = 1;
-    //let tafelvan = tafelvanObj.value;
     let output = "";
     let uitkomst = 0;
     for (let teller = 1; teller < 11; teller++){
-        uitkomst = teller * tafelvanObj.value;
-        output += teller + " x " + tafelvanObj.value + " = " + uitkomst + "<br>";
+        uitkomst = teller * tafelinpObj.value;
+        output += teller + " x " + tafelinpObj.value + " = " + uitkomst + "<br>";
     }
-    // while (teller < 21){
-    //     uitkomst = teller * tafelvan;
-    //     output += teller + " x " + tafelvan + " = " + uitkomst + "<br>";
-    //     teller++;
-    // }
-    document.getElementById("outputTafel").innerHTML = output;
-    //alert("Hij doet het! " + tafelvan)
+    tafeloutpObj.innerHTML = output;
+}
+function toonOpgave()
+{
+    let output = "";
+    let getal = Math.floor(Math.random()*6) + 1;
+    output = getal + " x " + oefentafelinpObj.value + " = ";
+    oefentafeloutpObj.innerHTML = output;
+}
+function controleerAntw()
+{
+    let antw = antwoefentafelwinpObj.value;
+    let berekend_antw = 
+    //alert ("antwoord = " + antw);
 }

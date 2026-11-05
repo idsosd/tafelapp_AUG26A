@@ -53,7 +53,6 @@
             </div>
         </nav> -->
         <div class="row">
-            <div class="col"></div>
             <div class="col">
                 <div class="card text-center">
                     <div class="card-header">
@@ -72,6 +71,39 @@
                             </div>
                         </div>
                         <div id="outputTafel"></div>
+
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        Made by OSD
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Tafel-oefenapp
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-4">
+                                <label for="inputOefenTafel" class="col-form-label">De tafel van</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="number" id="inputOefenTafel" class="form-control">
+                            </div>
+                            <div class="col-5">
+                                <a href="#" class="btn btn-primary" onclick="toonOpgave()">GO</a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4" id="outputOefenTafel"></div>
+                            <div class="col-3">
+                                <input type="number" id="inputAntwOefenTafel" class="form-control">
+                            </div>
+                            <div class="col-5">
+                                <a href="#" class="btn btn-success" onclick="controleerAntw()">CHECK</a>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="card-footer text-body-secondary">
